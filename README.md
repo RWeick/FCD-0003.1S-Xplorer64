@@ -37,4 +37,4 @@ Both scrambled and unscrambled firmwares are available in this repository.
 
 PCB Thickness: 1.2 mm
 
-![image](https://github.com/RWeick/FCD-0003.1S-Xplorer64/blob/main/FCD-0003.1S%20X64.png)
+![image](https://github.com/RWeick/FCD-0003.1S-Xplorer64/blob/main/FCD-0003.1S%20XP64.png)
