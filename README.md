@@ -33,7 +33,7 @@ function scramble(addr) {
          (addr & 0x1f000);
 }
 
-Both scrambled and unscrambled firmware is available in this repository.
+Both scrambled and unscrambled firmwares are available in this repository.
 
 PCB Thickness: 1.2 mm
 
