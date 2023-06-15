@@ -35,6 +35,9 @@ function scramble(addr) {
 
 Both scrambled and unscrambled firmwares are available in this repository.
 
+I have included python scripts to automate the scramble and unscramble process. Usage is: py scramble.py <file.bin> and py unscramble.py <file.bin>
+These will output a single file that is the result of the scrambling/unscrambling.
+
 PCB Thickness: 1.2 mm
 
 ![image](https://github.com/RWeick/FCD-0003.1S-Xplorer64/blob/main/FCD-0003.1S%20XP64.png)
