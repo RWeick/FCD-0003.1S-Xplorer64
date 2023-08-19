@@ -40,6 +40,8 @@ These will output a single file that is the result of the scrambling/unscramblin
 
 The entire firmware is mapped to 0x10400000 - 0x1043FFFF and can be easily read out with a Sanni Cart Reader at those addresses. Reading it out this way will produce an unscrambled firmware.
 
+New firmware can be written back to this range, however all writes appear to pass through the internal address scrambler and thus need to be issued to the scrambled address in order to arrive at the correct one.
+
 PCB Thickness: 1.2 mm
 
 ![image](https://github.com/RWeick/FCD-0003.1S-Xplorer64/blob/main/FCD-0003.1S%20XP64.png)
