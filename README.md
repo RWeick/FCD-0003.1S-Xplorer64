@@ -40,7 +40,7 @@ These will output a single file that is the result of the scrambling/unscramblin
 
 The entire firmware is mapped to 0x10400000 - 0x1043FFFF and can be easily read out with a Sanni Cart Reader at those addresses. Reading it out this way will produce an unscrambled firmware.
 
-New firmware can be written back to this range, however all writes appear to pass through the internal address scrambler and thus need to be issued to the scrambled address in order to arrive at the correct one.
+Writing firmware back requires the addresses and data to be transformed according to the scramble/unscramble functions listed above, and requires a read of 0x10760000 to initiate an even address write, or a read of 0x10770000 to initiate an odd address write, followed by the respective write to the transformed address, and ending with a read to 0x10740000. Even and odd writes are determined by dividing the original address in half, right shifting that data by 4, and checking parity. I've implemented this fully in the Sanni Cart Reader, and it can now program Xplorer 64 cartridges.
 
 PCB Thickness: 1.2 mm
 
